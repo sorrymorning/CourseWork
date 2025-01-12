@@ -1,0 +1,172 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\amirk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MPI-EFCore-Coursework-Example\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C795AE3E-FC15-4BB3-BC06-DCE14C4477A5}|MPICoursework\\MPICoursework.csproj|c:\\users\\amirk\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mpi-efcore-coursework-example\\mpicoursework\\generatedb\\generateentities\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C795AE3E-FC15-4BB3-BC06-DCE14C4477A5}|MPICoursework\\MPICoursework.csproj|solutionrelative:mpicoursework\\generatedb\\generateentities\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C795AE3E-FC15-4BB3-BC06-DCE14C4477A5}|MPICoursework\\MPICoursework.csproj|c:\\users\\amirk\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mpi-efcore-coursework-example\\mpicoursework\\generatedb\\generateentities\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C795AE3E-FC15-4BB3-BC06-DCE14C4477A5}|MPICoursework\\MPICoursework.csproj|solutionrelative:mpicoursework\\generatedb\\generateentities\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C795AE3E-FC15-4BB3-BC06-DCE14C4477A5}|MPICoursework\\MPICoursework.csproj|c:\\users\\amirk\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mpi-efcore-coursework-example\\mpicoursework\\generatedb\\generateentities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C795AE3E-FC15-4BB3-BC06-DCE14C4477A5}|MPICoursework\\MPICoursework.csproj|solutionrelative:mpicoursework\\generatedb\\generateentities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C795AE3E-FC15-4BB3-BC06-DCE14C4477A5}|MPICoursework\\MPICoursework.csproj|c:\\users\\amirk\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mpi-efcore-coursework-example\\mpicoursework\\generatedb\\generateentities\\application.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C795AE3E-FC15-4BB3-BC06-DCE14C4477A5}|MPICoursework\\MPICoursework.csproj|solutionrelative:mpicoursework\\generatedb\\generateentities\\application.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C795AE3E-FC15-4BB3-BC06-DCE14C4477A5}|MPICoursework\\MPICoursework.csproj|c:\\users\\amirk\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mpi-efcore-coursework-example\\mpicoursework\\commands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C795AE3E-FC15-4BB3-BC06-DCE14C4477A5}|MPICoursework\\MPICoursework.csproj|solutionrelative:mpicoursework\\commands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C795AE3E-FC15-4BB3-BC06-DCE14C4477A5}|MPICoursework\\MPICoursework.csproj|c:\\users\\amirk\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mpi-efcore-coursework-example\\mpicoursework\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C795AE3E-FC15-4BB3-BC06-DCE14C4477A5}|MPICoursework\\MPICoursework.csproj|solutionrelative:mpicoursework\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C795AE3E-FC15-4BB3-BC06-DCE14C4477A5}|MPICoursework\\MPICoursework.csproj|c:\\users\\amirk\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mpi-efcore-coursework-example\\mpicoursework\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C795AE3E-FC15-4BB3-BC06-DCE14C4477A5}|MPICoursework\\MPICoursework.csproj|solutionrelative:mpicoursework\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C795AE3E-FC15-4BB3-BC06-DCE14C4477A5}|MPICoursework\\MPICoursework.csproj|c:\\users\\amirk\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mpi-efcore-coursework-example\\mpicoursework\\tablesclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C795AE3E-FC15-4BB3-BC06-DCE14C4477A5}|MPICoursework\\MPICoursework.csproj|solutionrelative:mpicoursework\\tablesclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C795AE3E-FC15-4BB3-BC06-DCE14C4477A5}|MPICoursework\\MPICoursework.csproj|c:\\users\\amirk\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mpi-efcore-coursework-example\\mpicoursework\\mpicoursework.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{C795AE3E-FC15-4BB3-BC06-DCE14C4477A5}|MPICoursework\\MPICoursework.csproj|solutionrelative:mpicoursework\\mpicoursework.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 192,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\amirk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MPI-EFCore-Coursework-Example\\MPICoursework\\Program.cs",
+              "RelativeDocumentMoniker": "MPICoursework\\Program.cs",
+              "ToolTip": "C:\\Users\\amirk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MPI-EFCore-Coursework-Example\\MPICoursework\\Program.cs",
+              "RelativeToolTip": "MPICoursework\\Program.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAQwFEAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T08:36:40.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TablesClass.cs",
+              "DocumentMoniker": "C:\\Users\\amirk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MPI-EFCore-Coursework-Example\\MPICoursework\\TablesClass.cs",
+              "RelativeDocumentMoniker": "MPICoursework\\TablesClass.cs",
+              "ToolTip": "C:\\Users\\amirk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MPI-EFCore-Coursework-Example\\MPICoursework\\TablesClass.cs",
+              "RelativeToolTip": "MPICoursework\\TablesClass.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T08:36:40.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Commands.cs",
+              "DocumentMoniker": "C:\\Users\\amirk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MPI-EFCore-Coursework-Example\\MPICoursework\\Commands.cs",
+              "RelativeDocumentMoniker": "MPICoursework\\Commands.cs",
+              "ToolTip": "C:\\Users\\amirk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MPI-EFCore-Coursework-Example\\MPICoursework\\Commands.cs",
+              "RelativeToolTip": "MPICoursework\\Commands.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAlwCsAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T08:36:40.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\amirk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MPI-EFCore-Coursework-Example\\MPICoursework\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "MPICoursework\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\amirk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MPI-EFCore-Coursework-Example\\MPICoursework\\AppDbContext.cs",
+              "RelativeToolTip": "MPICoursework\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T08:36:40.519Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\amirk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MPI-EFCore-Coursework-Example\\MPICoursework\\GenerateDb\\GenerateEntities\\User.cs",
+              "RelativeDocumentMoniker": "MPICoursework\\GenerateDb\\GenerateEntities\\User.cs",
+              "ToolTip": "C:\\Users\\amirk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MPI-EFCore-Coursework-Example\\MPICoursework\\GenerateDb\\GenerateEntities\\User.cs",
+              "RelativeToolTip": "MPICoursework\\GenerateDb\\GenerateEntities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T08:36:40.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Status.cs",
+              "DocumentMoniker": "C:\\Users\\amirk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MPI-EFCore-Coursework-Example\\MPICoursework\\GenerateDb\\GenerateEntities\\Status.cs",
+              "RelativeDocumentMoniker": "MPICoursework\\GenerateDb\\GenerateEntities\\Status.cs",
+              "ToolTip": "C:\\Users\\amirk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MPI-EFCore-Coursework-Example\\MPICoursework\\GenerateDb\\GenerateEntities\\Status.cs",
+              "RelativeToolTip": "MPICoursework\\GenerateDb\\GenerateEntities\\Status.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T08:36:40.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Application.cs",
+              "DocumentMoniker": "C:\\Users\\amirk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MPI-EFCore-Coursework-Example\\MPICoursework\\GenerateDb\\GenerateEntities\\Application.cs",
+              "RelativeDocumentMoniker": "MPICoursework\\GenerateDb\\GenerateEntities\\Application.cs",
+              "ToolTip": "C:\\Users\\amirk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MPI-EFCore-Coursework-Example\\MPICoursework\\GenerateDb\\GenerateEntities\\Application.cs",
+              "RelativeToolTip": "MPICoursework\\GenerateDb\\GenerateEntities\\Application.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAswAwAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T08:36:40.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Manager.cs",
+              "DocumentMoniker": "C:\\Users\\amirk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MPI-EFCore-Coursework-Example\\MPICoursework\\GenerateDb\\GenerateEntities\\Manager.cs",
+              "RelativeDocumentMoniker": "MPICoursework\\GenerateDb\\GenerateEntities\\Manager.cs",
+              "ToolTip": "C:\\Users\\amirk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MPI-EFCore-Coursework-Example\\MPICoursework\\GenerateDb\\GenerateEntities\\Manager.cs",
+              "RelativeToolTip": "MPICoursework\\GenerateDb\\GenerateEntities\\Manager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T08:36:40.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MPICoursework.csproj",
+              "DocumentMoniker": "C:\\Users\\amirk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MPI-EFCore-Coursework-Example\\MPICoursework\\MPICoursework.csproj",
+              "RelativeDocumentMoniker": "MPICoursework\\MPICoursework.csproj",
+              "ToolTip": "C:\\Users\\amirk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MPI-EFCore-Coursework-Example\\MPICoursework\\MPICoursework.csproj",
+              "RelativeToolTip": "MPICoursework\\MPICoursework.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-01T08:36:40.547Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

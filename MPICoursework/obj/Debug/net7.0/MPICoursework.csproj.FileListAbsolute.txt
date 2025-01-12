@@ -1,0 +1,284 @@
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\MPICoursework.exe
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\MPICoursework.deps.json
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\MPICoursework.runtimeconfig.json
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\MPICoursework.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\MPICoursework.pdb
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\Azure.Core.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\Azure.Identity.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\Humanizer.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\Microsoft.Extensions.Caching.Memory.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\Microsoft.Extensions.Logging.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\Microsoft.Extensions.Primitives.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\Mono.TextTemplating.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\System.CodeDom.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\System.Drawing.Common.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\System.Memory.Data.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\System.Runtime.Caching.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\System.Security.Permissions.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\System.Windows.Extensions.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\obj\Debug\net7.0\MPICoursework.csproj.AssemblyReference.cache
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\obj\Debug\net7.0\MPICoursework.GeneratedMSBuildEditorConfig.editorconfig
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\obj\Debug\net7.0\MPICoursework.AssemblyInfoInputs.cache
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\obj\Debug\net7.0\MPICoursework.AssemblyInfo.cs
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\obj\Debug\net7.0\MPICoursework.csproj.CoreCompileInputs.cache
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\obj\Debug\net7.0\MPICoursework.csproj.CopyComplete
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\obj\Debug\net7.0\MPICoursework.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\obj\Debug\net7.0\refint\MPICoursework.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\obj\Debug\net7.0\MPICoursework.pdb
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\obj\Debug\net7.0\MPICoursework.genruntimeconfig.cache
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\obj\Debug\net7.0\ref\MPICoursework.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\NetTopologySuite.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\NetTopologySuite.IO.SqlServerBytes.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\obj\Debug\net7.0\EFCoreSqlServerNetTopologySuite.cs
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\MPI.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\EntityFramework.SqlServer.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\EntityFramework.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\ru\EntityFramework.SqlServer.resources.dll
+D:\VS apps\EF Core project\MPICoursework\MPICoursework\bin\Debug\net7.0\ru\EntityFramework.resources.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\obj\Debug\net7.0\MPICoursework.csproj.AssemblyReference.cache
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\obj\Debug\net7.0\MPICoursework.GeneratedMSBuildEditorConfig.editorconfig
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\obj\Debug\net7.0\MPICoursework.AssemblyInfoInputs.cache
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\obj\Debug\net7.0\MPICoursework.AssemblyInfo.cs
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\obj\Debug\net7.0\MPICoursework.csproj.CoreCompileInputs.cache
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\obj\Debug\net7.0\EFCoreSqlServerNetTopologySuite.cs
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\obj\Debug\net7.0\MPICoursework.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\obj\Debug\net7.0\refint\MPICoursework.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\obj\Debug\net7.0\MPICoursework.pdb
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\MPICoursework.exe
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\MPICoursework.deps.json
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\MPICoursework.runtimeconfig.json
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\MPICoursework.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\MPICoursework.pdb
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Azure.Core.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Azure.Identity.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Humanizer.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Microsoft.Extensions.Caching.Memory.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Microsoft.Extensions.Logging.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Microsoft.Extensions.Primitives.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Mono.TextTemplating.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\MPI.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\NetTopologySuite.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\NetTopologySuite.IO.SqlServerBytes.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\System.CodeDom.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\System.Drawing.Common.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\System.Memory.Data.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\System.Runtime.Caching.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\System.Security.Permissions.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\System.Windows.Extensions.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\obj\Debug\net7.0\MPICoursework.csproj.CopyComplete
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\obj\Debug\net7.0\MPICoursework.genruntimeconfig.cache
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\obj\Debug\net7.0\ref\MPICoursework.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Faker.Net.6.0.dll
+D:\VS apps\EF Core project\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\de-DE\Faker.Net.6.0.resources.dll
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\MPICoursework.exe
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\MPICoursework.deps.json
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\MPICoursework.runtimeconfig.json
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\MPICoursework.dll
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\MPICoursework.pdb
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Azure.Core.dll
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Azure.Identity.dll
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Faker.Net.6.0.dll
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Microsoft.Extensions.Logging.dll
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Microsoft.Extensions.Primitives.dll
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\MPI.dll
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\System.Drawing.Common.dll
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\System.Memory.Data.dll
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\System.Runtime.Caching.dll
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\System.Security.Permissions.dll
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\System.Windows.Extensions.dll
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\de-DE\Faker.Net.6.0.resources.dll
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\obj\Debug\net7.0\MPICoursework.csproj.AssemblyReference.cache
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\obj\Debug\net7.0\MPICoursework.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\obj\Debug\net7.0\MPICoursework.AssemblyInfoInputs.cache
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\obj\Debug\net7.0\MPICoursework.AssemblyInfo.cs
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\obj\Debug\net7.0\MPICoursework.csproj.CoreCompileInputs.cache
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\obj\Debug\net7.0\MPICoursework.csproj.CopyComplete
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\obj\Debug\net7.0\MPICoursework.dll
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\obj\Debug\net7.0\refint\MPICoursework.dll
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\obj\Debug\net7.0\MPICoursework.pdb
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\obj\Debug\net7.0\MPICoursework.genruntimeconfig.cache
+C:\Users\landw\Downloads\MPICoursework — копия\MPICoursework\obj\Debug\net7.0\ref\MPICoursework.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\MPICoursework.exe
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\MPICoursework.deps.json
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\MPICoursework.runtimeconfig.json
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\MPICoursework.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\MPICoursework.pdb
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\Azure.Core.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\Azure.Identity.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\Faker.Net.6.0.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\Microsoft.Extensions.Logging.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\Microsoft.Extensions.Primitives.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\MPI.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\System.Drawing.Common.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\System.Memory.Data.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\System.Runtime.Caching.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\System.Security.Permissions.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\System.Windows.Extensions.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\de-DE\Faker.Net.6.0.resources.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\obj\Debug\net7.0\MPICoursework.csproj.AssemblyReference.cache
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\obj\Debug\net7.0\MPICoursework.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\obj\Debug\net7.0\MPICoursework.AssemblyInfoInputs.cache
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\obj\Debug\net7.0\MPICoursework.AssemblyInfo.cs
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\obj\Debug\net7.0\MPICoursework.csproj.CoreCompileInputs.cache
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\obj\Debug\net7.0\MPICours.C0107CF2.Up2Date
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\obj\Debug\net7.0\MPICoursework.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\obj\Debug\net7.0\refint\MPICoursework.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\obj\Debug\net7.0\MPICoursework.pdb
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\obj\Debug\net7.0\MPICoursework.genruntimeconfig.cache
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\obj\Debug\net7.0\ref\MPICoursework.dll
