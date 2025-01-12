@@ -58,8 +58,7 @@
               "RelativeToolTip": "MPICoursework\\Program.cs",
               "ViewState": "AgIAAEYAAAAAAAAAAAAQwFEAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T08:36:40.424Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-01T08:36:40.424Z"
             },
             {
               "$type": "Document",
@@ -71,8 +70,7 @@
               "RelativeToolTip": "MPICoursework\\TablesClass.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T08:36:40.507Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-01T08:36:40.507Z"
             },
             {
               "$type": "Document",
@@ -84,8 +82,7 @@
               "RelativeToolTip": "MPICoursework\\Commands.cs",
               "ViewState": "AgIAAEMAAAAAAAAAAAAlwCsAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T08:36:40.513Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-01T08:36:40.513Z"
             },
             {
               "$type": "Document",
@@ -97,8 +94,7 @@
               "RelativeToolTip": "MPICoursework\\AppDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAABWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T08:36:40.519Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-01T08:36:40.519Z"
             },
             {
               "$type": "Document",
@@ -110,8 +106,7 @@
               "RelativeToolTip": "MPICoursework\\GenerateDb\\GenerateEntities\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T08:36:40.524Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-01T08:36:40.524Z"
             },
             {
               "$type": "Document",
@@ -123,8 +118,7 @@
               "RelativeToolTip": "MPICoursework\\GenerateDb\\GenerateEntities\\Status.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T08:36:40.529Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-01T08:36:40.529Z"
             },
             {
               "$type": "Document",
@@ -136,8 +130,7 @@
               "RelativeToolTip": "MPICoursework\\GenerateDb\\GenerateEntities\\Application.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAswAwAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T08:36:40.534Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-01T08:36:40.534Z"
             },
             {
               "$type": "Document",
@@ -147,7 +140,7 @@
               "RelativeDocumentMoniker": "MPICoursework\\GenerateDb\\GenerateEntities\\Manager.cs",
               "ToolTip": "C:\\Users\\amirk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MPI-EFCore-Coursework-Example\\MPICoursework\\GenerateDb\\GenerateEntities\\Manager.cs",
               "RelativeToolTip": "MPICoursework\\GenerateDb\\GenerateEntities\\Manager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-01T08:36:40.539Z",
               "EditorCaption": ""
