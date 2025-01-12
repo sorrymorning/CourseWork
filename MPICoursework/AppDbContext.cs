@@ -6,13 +6,13 @@ namespace MPICoursework
     class AppDbContext : DbContext
     {
         // Таблица заявок
-        public DbSet<Application> Applications { get; set; }
+        public DbSet<Album> Albums { get; set; }
         // Таблица менеджеров
-        public DbSet<Manager> Managers { get; set; }
+        public DbSet<Artist> Artists { get; set; }
         // Таблица статусов
-        public DbSet<Status> Statuses { get; set; }
+        public DbSet<Playlist> Playlists { get; set; }
         // Таблица пользователей
-        public DbSet<User> Users { get; set; }
+        public DbSet<Track> Tracks { get; set; }
 
         public AppDbContext()
         {
@@ -20,11 +20,11 @@ namespace MPICoursework
             Database.EnsureCreated();
         }
         // Fluent API
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            // Отключение автоматического заполнения Id у таблицы Status
-            modelBuilder.Entity<Status>().Property(e => e.Id).ValueGeneratedNever();
-        }
+        //protected override void OnModelCreating(ModelBuilder modelBuilder)
+        //{
+        //    // Отключение автоматического заполнения Id у таблицы Status
+        //    modelBuilder.Entity<Status>().Property(e => e.Id).ValueGeneratedNever();
+        //}
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             // Строка подключения к базе данных

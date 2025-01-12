@@ -4,18 +4,16 @@ using MPICoursework.GenerateDb.GenerateEntities;
 namespace MPICoursework
 {
     public static class Commands
-    {   
+    {
         // Сохранить все изменения в локальной коллекции в базу
         public static int SaveLocalDb(TablesClass localDb)
         {
             using (var db = new AppDbContext())
-            {   
-                // Обновить изменения в таблице Users
-                db.Users.UpdateRange(localDb.UserList);
-                // Обновить изменения в таблице Managers
-                db.Managers.UpdateRange(localDb.ManagerList);
-                // Обновить изменения в таблице Applications
-                db.Applications.UpdateRange(localDb.ApplicationList);
+            {
+                db.Albums.UpdateRange(localDb.AlbumList);
+                db.Artists.UpdateRange(localDb.ArtistList);
+                db.Playlists.UpdateRange(localDb.PlaylistList);
+                db.Tracks.UpdateRange(localDb.TrackList);
                 // Если при сохранении базы данных возникнет ошибка, вернется 0, иначе 1
                 try
                 {
@@ -27,190 +25,220 @@ namespace MPICoursework
                 }
                 return 1;
             }
-            
+
         }
 
-        // Всех онлайн пользователй перевести в оффлайн
+        //// Всех онлайн пользователй перевести в оффлайн
         public static int SetOffline(TablesClass localDb)
         {
+            // Поиск записи с полем Country, равным "Greece"
+            List<Artist> artists = localDb.ArtistList.Where(p => p.Country == "Greece").ToList();
+            //Console.WriteLine($"Found {greeceArtists.Count} artists from Greece.");
+           
+            if (!artists.Any())
+                return 0;
+
+            // Перебрать найденных артистов из Греции
+            foreach (var artist in artists)
             {
-                // status с полем offline
-                var offline = localDb.StatusList.Where(p => p.Id == 2).FirstOrDefault();
-                // Список пользователей
-                List<User> users = localDb.UserList.ToList();
-                // Если список пользователей пустой
-                if (!users.Any() || offline is null)
-                    return 0;
-                // Перебрать список пользователей
-                foreach (var user in users)
-                {
-                    // Установить статус в offline
-                    user.StatusId = 2;
-                    // Полю status с навигационным свойством присваивается offline
-                    user.Status = offline;
-                }
-                return 1;
-            }      
+                artist.Genre = "Classic";
+            }
+
+            return 1;
         }
-        // Увеличить возраст всех пользователей на 1 год
-        public static int AddAge(TablesClass localDb)
+
+        //// Увеличить возраст всех пользователей на 1 год
+        public static int AddPlays(TablesClass localDb)
         {
             // Перебрать каждого пользователя в списке
-            foreach (var user in localDb.UserList)
+            foreach (var user in localDb.TrackList)
             {
                 // Увеличить текущее значение возраста на 1
-                user.Age = user.Age + 1;
-            }
-            // Перебрать каждого менеджера в списке
-            foreach (var manager in localDb.ManagerList)
-            {
-                // Увеличить текущее значение возраста на 1
-                manager.Age = manager.Age + 1;
+                user.Plays = user.Plays + 1000;
             }
             return 1;
         }
-        // Вывести количество пользователей с возрастом более 17 лет в статусе online
-        public static int CountUsersOnline(TablesClass localDb)
+        //// Вывести количество пользователей с возрастом более 17 лет в статусе online
+        public static int CountPlaysTenThousand(TablesClass localDb)
         {
-            return localDb.UserList.Where(p => p.StatusId == 1 && p.Age > 17).Count();
+            return localDb.TrackList.Where(p => p.Plays > 10000).Count();
         }
         // Вычислить количество заявок для каждого пользователя
-        public static List<AppsCount> SumApps(TablesClass localDb)
+        public static List<AlbumPlays> SumPlaysByAlbum(TablesClass localDb)
         {
-            return localDb.ApplicationList.GroupBy(p => p.UserId).Select(g => new AppsCount // Новая таблица после группировки
+            return localDb.TrackList.GroupBy(p => p.AlbumId).Select(g => new AlbumPlays
             {
-                // Id после группировки
-                AppsCountId = g.Select(p => p.UserId).First(),
-                // Имя
-                Name = g.Select(p => p.UserFirstName).First(),
-                // Фамилия
-                Surname = g.Select(p => p.UserLastName).First(),
-                // Количество заявок
-                Count = g.Count()
+                // Название альбома
+                AlbumName = g.Select(p => p.Album.Title).First(),
+                // Сумма прослушиваний всех треков альбома
+                TotalPlays = g.Sum(p => p.Plays)
             }).ToList();
         }
-        // Найти минимальный возраст среди менеджеров
+
+        //// Найти минимальный возраст среди менеджеров
         public static int MinAge(TablesClass localDb)
         {
             // Если таблица с менеджерами не пустая, то вернуть минимальный возраст
-            if (localDb.ManagerList.Any())
-                return localDb.ManagerList.Min(p => p.Age);
+            if (localDb.TrackList.Any())
+                return localDb.TrackList.Min(p => p.Plays);
             // Если таблица пустая, то вернуть 0
             else
                 return 0;
         }
-        // Найти максимальный возраст среди менеджеров
+        //// Найти максимальный возраст среди менеджеров
         public static int MaxAge(TablesClass localDb)
         {
             // Если таблица с менеджерами не пустая, то вернуть максимальный возраст
-            if (localDb.ManagerList.Any())
-                return localDb.ManagerList.Max(p => p.Age);
+            if (localDb.TrackList.Any())
+                return localDb.TrackList.Max(p => p.Plays);
             // Если таблица пустая, то вернуть 0
             else
                 return 0;
         }
-        // Предзагрузка таблиц
+        //// Предзагрузка таблиц
         public static TablesClass PreLoading(int rank, int size)
         {
             using (var db = new AppDbContext())
             {
                 // Количество строк в каждой таблице
-                int countApplication = db.Applications.Count();
-                int countManager = db.Managers.Count();
-                int countUser = db.Users.Count();
+                int countTracks = db.Tracks.Count();
+                int countArtists = db.Artists.Count();
+                int countAlbums = db.Albums.Count();
+                int countPlaylists = db.Playlists.Count();
+
                 // Размер части для каждой таблицы
-                int partApplication = (countApplication / size + 1);
-                int partManager = (countManager / size + 1);
-                int partUser = (countUser / size + 1);
+                int partTracks = (countTracks / size + 1);
+                int partArtists = (countArtists / size + 1);
+                int partAlbums = (countAlbums / size + 1);
+                int partPlaylists = (countPlaylists / size + 1);
+
                 // Смещение по каждой таблице
-                int offsetApplication = rank * partApplication;
-                int offsetManager = rank * partManager;
-                int offsetUser = rank * partUser;
+                int offsetTracks = rank * partTracks;
+                int offsetArtists = rank * partArtists;
+                int offsetAlbums = rank * partAlbums;
+                int offsetPlaylists = rank * partPlaylists;
 
                 return new TablesClass
                 {
-                    // Заполнение списка заявок из базы данных
-                    ApplicationList = db.Applications.Skip(offsetApplication).Take(partApplication).OrderBy(p => p.Id).ToList(),
-                    // Заполнение списка менеджеров из базы данных
-                    ManagerList = db.Managers.Include(p => p.Status).Skip(offsetManager).Take(partManager).OrderBy(p => p.Id).ToList(),
-                    // Заполнение списка пользователей из базы данных
-                    UserList = db.Users.Include(p => p.Status).Skip(offsetUser).Take(partUser).OrderBy(p => p.Id).ToList(),
-                    // Заполнение списка статусов из базы данных
-                    StatusList = db.Statuses.ToList()
+                    // Заполнение списка треков из базы данных
+                    TrackList = db.Tracks
+                        .Include(t => t.Album)
+                        //.Include(t => t.Artist)
+                        .Skip(offsetTracks)
+                        .Take(partTracks)
+                        .OrderBy(t => t.TrackId)
+                        .ToList(),
+
+                    // Заполнение списка исполнителей из базы данных
+                    ArtistList = db.Artists
+                        //.Include(a => a.Albums)
+                        .Include(a => a.Tracks)
+                        .Skip(offsetArtists)
+                        .Take(partArtists)
+                        .OrderBy(a => a.ArtistId)
+                        .ToList(),
+
+                    // Заполнение списка альбомов из базы данных
+                    AlbumList = db.Albums
+                        .Include(a => a.Artist)
+                        .Include(a => a.Tracks)
+                        .Skip(offsetAlbums)
+                        .Take(partAlbums)
+                        .OrderBy(a => a.AlbumId)
+                        .ToList(),
+
+                    // Заполнение списка плейлистов из базы данных
+                    PlaylistList = db.Playlists
+                        .Include(p => p.Tracks)
+                            //.ThenInclude(pt => pt.Track)
+                        .Skip(offsetPlaylists)
+                        .Take(partPlaylists)
+                        .OrderBy(p => p.PlaylistId)
+                        .ToList()
                 };
             }
         }
+
         // Сгенерировать базу данных с count строк
         public static void CreateDatabase(int count)
         {
             using (var db = new AppDbContext())
             {
-                // Добавление онлайн статуса
-                var onlineStatus = new Status { Id = 1, StatusName = "online" };
-                // Добавление оффлайн статуса
-                var offlineStatus = new Status { Id = 2, StatusName = "offline" };
-                if (!db.Statuses.Any())
-                {
-                    // Добавить статусы в базу данных
-                    db.Statuses.AddRange(onlineStatus, offlineStatus);
-                    // Зафиксировать изменения
-                    db.SaveChanges();
-                }
-
                 Random rand = new Random();
-                // Список пользователей
-                List<User> users = new List<User>{ };
-                // Список менеджеров
-                List<Manager> managers = new List<Manager> { };
-                for (int i = 0; i < count; i++)
-                {
-                    // Случайный пользователь
-                    User user = new User
-                    {
-                        FirstName = Faker.Name.First(),
-                        LastName = Faker.Name.Last(),
-                        Age = rand.Next(14, 66),
-                        StatusId = rand.Next(1, 3)
-                    };
-                    // Случайный пользователь добавляется в список users
-                    users.Add(user);
-                    // Случайный пользователь добавляется в базу данных
-                    db.Users.Add(user);
 
-                    // Случайный менеджер
-                    var manager = new Manager
+                // Создание и добавление исполнителей
+                var artists = new List<Artist>();
+                for (int i = 0; i < count / 2; i++)
+                {
+                    var artist = new Artist
                     {
-                        FirstName = Faker.Name.First(),
-                        LastName = Faker.Name.Last(),
-                        Age = rand.Next(14, 66),
-                        StatusId = rand.Next(1, 3)
+                        Name = Faker.Name.FullName(),
+                        Genre = Faker.Lorem.Words(1).First(),
+                        Country = Faker.Address.Country()
                     };
-                    // Случайный менеджер добавляется в список managers
-                    managers.Add(manager);
-                    // Случайный менеджер добавляется в базу данных
-                    db.Managers.Add(manager);
+                    artists.Add(artist);
+                    db.Artists.Add(artist);
                 }
-                // Сохранить изменения в базе данных
+
+                // Сохранение изменений в базе данных
                 db.SaveChanges();
 
-                for (int i = 0; i < count ; i++)
+                // Создание и добавление альбомов
+
+                var albums = new List<Album>();
+                foreach (var artist in artists)
                 {
-                    // Случайный пользователь из списка users
-                    User randUser = users[rand.Next(users.Count)];
-                    // Случайный менеджер из списка managers
-                    Manager randManager = managers[rand.Next(managers.Count)];
-                    // Формирование случайной заявки
-                    db.Applications.Add(new Application
+                    for (int i = 0; i < rand.Next(1, 5); i++)
                     {
-                        UserFirstName = randUser.FirstName,
-                        UserLastName = randUser.LastName,
-                        UserId = randUser.Id,
-                        ManagerFirstName = randManager.FirstName,
-                        ManagerLastName = randManager.LastName,
-                        ManagerId = randManager.Id
-                    });
+                        var album = new Album
+                        {
+                            Title = Faker.Lorem.Sentence(3),
+                            ReleaseDate = Faker.Identification.DateOfBirth(),
+                            ArtistId = artist.ArtistId
+                        };
+                        albums.Add(album);
+                        db.Albums.Add(album);
+                    }
                 }
-                // Сохранить изменения в базе данных
+
+                // Сохранение изменений в базе данных
+                db.SaveChanges();
+
+                // Создание и добавление треков
+                var tracks = new List<Track>();
+                foreach (var album in albums)
+                {
+                    for (int i = 0; i < rand.Next(5, 15); i++)
+                    {
+                        var track = new Track
+                        {
+                            Title = Faker.Lorem.Sentence(2),
+                            Duration = TimeSpan.FromSeconds(rand.Next(120, 420)),
+                            Plays = rand.Next(52, 1000000),
+                            ReleaseDate = album.ReleaseDate.AddDays(rand.Next(1, 365)),
+                            AlbumId = album.AlbumId
+                        };
+                        tracks.Add(track);
+                        db.Tracks.Add(track);
+                    }
+                }
+
+                // Сохранение изменений в базе данных
+                db.SaveChanges();
+
+                // Создание и добавление плейлистов
+                for (int i = 0; i < count / 4; i++)
+                {
+                    var playlist = new Playlist
+                    {
+                        Name = Faker.Lorem.Sentence(2),
+                        CreationDate = DateTime.Now.AddDays(-rand.Next(1, 1000)),
+                        Tracks = tracks.OrderBy(t => rand.Next()).Take(rand.Next(5, 20)).ToList()
+                    };
+                    db.Playlists.Add(playlist);
+                }
+
+                // Сохранение изменений в базе данных
                 db.SaveChanges();
             }
         }

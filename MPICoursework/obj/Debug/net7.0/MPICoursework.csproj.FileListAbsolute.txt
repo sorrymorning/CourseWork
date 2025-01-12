@@ -282,3 +282,4 @@ C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MP
 C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\obj\Debug\net7.0\MPICoursework.pdb
 C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\obj\Debug\net7.0\MPICoursework.genruntimeconfig.cache
 C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\obj\Debug\net7.0\ref\MPICoursework.dll
+C:\Users\amirk\OneDrive\Рабочий стол\MPI-EFCore-Coursework-Example\MPICoursework\obj\Debug\net7.0\MPICoursework.sourcelink.json

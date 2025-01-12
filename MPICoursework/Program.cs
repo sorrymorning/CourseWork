@@ -36,12 +36,12 @@ namespace MPICoursework
                     if (comm.Rank == 0)
                     {
                         Console.Write("Введите команду \nsave - сохранить базу данных;" +
-                                                      "\nsoff - установить статус offline;" + 
-                                                      "\nage - увеличить возраст пользователей на 1;" +
-                                                      "\nonl - посчитать количество пользователей online;" +
-                                                      "\nmax - найти максимальный возраст менеджеров;" +
-                                                      "\nmin - найти минимальный возраст менеджеров;" +
-                                                      "\nsum - посчитать количество заявок пользователей;" +
+                                                      "\nscl - установить жанр на классику;" + 
+                                                      "\nplays - увеличить прослушивания на 1000;" +
+                                                      "\ncount - посчитать количество песен с больше 10000 прослушиваний;" +
+                                                      "\nmax - найти максимальное количество прослушиваний;" +
+                                                      "\nmin - найти минимальное количество прослушиваний;" +
+                                                      "\nsum - вывести альбомы и количество прослушиваний;" +
                                                       "\ncreate - генерация базы данных: ");
                         command = Console.ReadLine();
                     }
@@ -72,7 +72,7 @@ namespace MPICoursework
                             }
                             stopWatch.Stop();
                             break;
-                        case "soff":
+                        case "scl":
                             // Запуск замера времени
                             stopWatch.Restart();
                             stopWatch.Start();
@@ -82,9 +82,9 @@ namespace MPICoursework
                                 int count = comm.Reduce(Commands.SetOffline(localDataBase), Operation<int>.Add, 0);
                                 // Если число успешных выполнений совпало с числом процессов
                                 if (count == comm.Size)
-                                    Console.WriteLine("Все пользователи переведены в статус offline");
+                                    Console.WriteLine("Всем артистам поменяли жанр на классику");
                                 else
-                                    Console.WriteLine("Пользователи не были переведены в offline");
+                                    Console.WriteLine("Не получилось поменять жанр на классику");
                             }
                             else
                             {
@@ -93,43 +93,43 @@ namespace MPICoursework
                             }
                             stopWatch.Stop();
                             break;
-                        case "age":
+                        case "plays":
                             // Запуск замера времени
                             stopWatch.Restart();
                             stopWatch.Start();
                             if (comm.Rank == 0)
                             {
-                                Console.WriteLine("Увеличиваем возраст пользователей на 1 год");
+                                Console.WriteLine("Увеличиваем количество прослушиваний на 1000");
                                 // Сборка всех данных в 0 процессе с суммированием
-                                int count = comm.Reduce(Commands.AddAge(localDataBase), Operation<int>.Add, 0);
+                                int count = comm.Reduce(Commands.AddPlays(localDataBase), Operation<int>.Add, 0);
                                 // Если число успешных выполнений совпало с числом процессов
                                 if (count == comm.Size)
-                                    Console.WriteLine("Возраст успешно увеличен на 1 год");
+                                    Console.WriteLine("Прослушивания успешно увеличены на 1000");
                                 else
-                                    Console.WriteLine("Возраст не был увеличен");
+                                    Console.WriteLine("Прослушивания не были увеличены на 1000(((");
                             }
                             else
                             {
                                 // Сборка всех данных в 0 процессе с суммированием
-                                comm.Reduce(Commands.AddAge(localDataBase), Operation<int>.Add, 0);
+                                comm.Reduce(Commands.AddPlays(localDataBase), Operation<int>.Add, 0);
                             }
                             stopWatch.Stop();
                             break;
-                        case "onl":
-                            // Запуск замера времени
+                        case "count":
+                            
                             stopWatch.Restart();
                             stopWatch.Start();
                             if (comm.Rank == 0)
                             {
-                                Console.WriteLine("Выбираем пользователей онлайн");
-                                // Сборка всех данных в 0 процессе с суммированием
-                                int count = comm.Reduce(Commands.CountUsersOnline(localDataBase), Operation<int>.Add, 0);
-                                Console.WriteLine($"Онлайн: {count}");
+                                Console.WriteLine("Выбираем треки, у которых больше 10000 прослушиваний");
+                               
+                                int count = comm.Reduce(Commands.CountPlaysTenThousand(localDataBase), Operation<int>.Add, 0);
+                                Console.WriteLine($"Вот их количество: {count}");
                             }
                             else
                             {
-                                // Сборка всех данных в 0 процессе с суммированием
-                                comm.Reduce(Commands.CountUsersOnline(localDataBase), Operation<int>.Add, 0);
+                               
+                                comm.Reduce(Commands.CountPlaysTenThousand(localDataBase), Operation<int>.Add, 0);
                             }
                             stopWatch.Stop();
                             break;
@@ -139,50 +139,54 @@ namespace MPICoursework
                             stopWatch.Start();
                             if (comm.Rank == 0)
                             {
-                                Console.WriteLine("Считаем число заявок");
+                                Console.WriteLine("Считаем количество прослушиваний по альбомам");
+
                                 // Сборка результата выполнения в 0 процессе
-                                string[] serializedResultsGath = comm.Gather(JsonSerializer.Serialize(Commands.SumApps(localDataBase)), 0);
+                                string[] serializedResultsGath = comm.Gather(JsonSerializer.Serialize(Commands.SumPlaysByAlbum(localDataBase)), 0);
+
                                 // Список для хранения десериализованного результата
-                                List<AppsCount> sumUsers = new List<AppsCount> { };
+                                List<AlbumPlays> albumPlaysList = new List<AlbumPlays> { };
                                 if (serializedResultsGath.Any())
-                                    sumUsers = serializedResultsGath
-                                    .Select(x => JsonSerializer.Deserialize<List<AppsCount>>(x)!)
-                                    .Where(p => p != null)
-                                    .Aggregate((a, b) => a.Concat(b).ToList()); // {{1,2,3,4}, {5,6,7,8}, {9, 10}} -> {1,2,3,4,5,6,7,8,9,10}
-                                
-                                if (!sumUsers.Any() || sumUsers.Count < 1)
+                                {
+                                    albumPlaysList = serializedResultsGath
+                                        .Select(x => JsonSerializer.Deserialize<List<AlbumPlays>>(x)!)
+                                        .Where(p => p != null)
+                                        .Aggregate((a, b) => a.Concat(b).ToList()); // Объединение всех результатов
+                                }
+
+                                if (!albumPlaysList.Any())
                                 {
                                     Console.WriteLine("Список пуст");
                                     stopWatch.Stop();
                                     break;
                                 }
-                                // Вывод на экран первых 100 пользователей и количества их заявок
-                                foreach (var user in sumUsers.OrderBy(p => p.AppsCountId).Take(100))
+
+                                // Вывод на экран первых 100 альбомов и суммы прослушиваний
+                                foreach (var album in albumPlaysList.OrderByDescending(p => p.TotalPlays).Take(100))
                                 {
-                                    Console.WriteLine($"{user.AppsCountId} | {user.Name} {user.Surname} | {user.Count}");
+                                    Console.WriteLine($"{album.AlbumName} | Total Plays: {album.TotalPlays}");
                                 }
                             }
                             else
                             {
                                 // Все !0 процессы выполняют сериализацию и отправляют данные в 0 процесс
-                                comm.Gather(JsonSerializer.Serialize(Commands.SumApps(localDataBase)), 0);
+                                comm.Gather(JsonSerializer.Serialize(Commands.SumPlaysByAlbum(localDataBase)), 0);
                             }
                             stopWatch.Stop();
                             break;
+
                         case "max":
-                            // Запуск замера времени
                             stopWatch.Restart();
                             stopWatch.Start();
                             if (comm.Rank == 0)
                             {
-                                Console.WriteLine("Высчитываем максимальный возраст");
-                                // Собираем все данные, определяем максимальное значение и передаем 0 процессу
-                                int maxAges = comm.Reduce(Commands.MaxAge(localDataBase), Operation<int>.Max, 0);
-                                Console.WriteLine($"Максимальный возраст: {maxAges}");
+                                Console.WriteLine("Высчитываем максимальное количество прослушиваний");
+                                int max = comm.Reduce(Commands.MaxAge(localDataBase), Operation<int>.Max, 0);
+                                Console.WriteLine($"Максимальное количество прослушивание: {max}");
                             }
                             else
                             {
-                                // Собираем все данные, определяем максимальное значение и передаем 0 процессу
+
                                 comm.Reduce(Commands.MaxAge(localDataBase), Operation<int>.Max, 0);
                             }
                             stopWatch.Stop();
@@ -193,10 +197,10 @@ namespace MPICoursework
                             stopWatch.Start();
                             if (comm.Rank == 0)
                             {
-                                Console.WriteLine("Высчитываем минимальный возраст");
+                                Console.WriteLine("Высчитываем минимальное количество прослушиваний");
                                 // Собираем все данные, определяем минимальное значение и передаем 0 процессу
-                                int maxAges = comm.Reduce(Commands.MinAge(localDataBase), Operation<int>.Min, 0);
-                                Console.WriteLine($"Минимальный возраст: {maxAges}");
+                                int min = comm.Reduce(Commands.MinAge(localDataBase), Operation<int>.Min, 0);
+                                Console.WriteLine($"Минимальное количество: {min}");
                             }
                             else
                             {
@@ -215,11 +219,9 @@ namespace MPICoursework
                             {
                                 Console.Write("Введите число строк для генерании: ");
                                 countStrings = Convert.ToInt32(Console.ReadLine());
-
                                 Console.WriteLine("Генерируем строки");
                                 // Генерируем данные
                                 Commands.CreateDatabase(countStrings);
-
                                 Console.WriteLine("Строки данных сгенерированы");
                             }       
                             // Барьер, чтобы не терялись данные и процессы не начали загрузку базы раньше окончания генерации
