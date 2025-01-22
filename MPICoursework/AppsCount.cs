@@ -1,15 +1,12 @@
 ﻿namespace MPICoursework
 {
     // Класс для группировки пользователей по Id в таблице Applications(применяется в Commands.SumApps)
-    public class AppsCount
+    public class OrderCount
     {
-        // Id завполняется вручную
-        public int? AppsCountId {  get; set; }
-        // Имя пользователя
-        public string Name {  get; set; }
-        // Фамилия пользователя
-        public string Surname { get; set; }
-        // Число заявок
-        public int Count { get; set; }
+        public int? CustomerId { get; set; } // Id покупателя
+        public string Name { get; set; }    // Имя покупателя
+        public string Surname { get; set; } // Фамилия покупателя
+        public int Count { get; set; }      // Количество заказов
     }
+
 }

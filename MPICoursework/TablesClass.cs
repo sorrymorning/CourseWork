@@ -6,12 +6,15 @@ namespace MPICoursework
     public class TablesClass
     {
         // Список заявок
-        public List<Application> ApplicationList { get; set; }
+        public List<Order> OrderList { get; set; }
         // Список менеджеров
         public List<Manager> ManagerList { get; set; }
         // Список пользователей
-        public List<User> UserList { get; set; }
+        public List<Customer> CustomerList { get; set; }
         // Список статусов
         public List<Status> StatusList { get; set; }
+        public List<Product> ProductList { get; set; }
+        public List<Category> CategoryList { get; set; }
+
     }
 }
