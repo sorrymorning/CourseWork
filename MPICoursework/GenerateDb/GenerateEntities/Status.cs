@@ -2,9 +2,9 @@
 {
     public class Status
     {
-        // Id заполняется вручную
+        // Id статуса
         public int Id { get; set; }
-        // Название статуса
-        public string StatusName {  get; set; }
+        // Название статуса (например, "В ожидании", "Готовится", "Доставляется", "Доставлено")
+        public string StatusName { get; set; }
     }
 }

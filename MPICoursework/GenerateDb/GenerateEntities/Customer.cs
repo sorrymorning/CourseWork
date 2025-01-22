@@ -1,18 +1,20 @@
 ﻿namespace MPICoursework.GenerateDb.GenerateEntities
 {
-    public class User
+    public class Customer
     {
-        // Id
+        // Id клиента
         public int Id { get; set; }
         // Имя
         public string FirstName { get; set; }
         // Фамилия
         public string LastName { get; set; }
-        // Возраст
-        public int Age { get; set; }
+        // Номер телефона
+        public string PhoneNumber { get; set; }
+        // Адрес доставки
+        public string DeliveryAddress { get; set; }
         // FK статус
         public int StatusId { get; set; }
-        // FK навигационное свойство
+        // FK навигационное свойство статуса
         public Status Status { get; set; }
     }
 }

@@ -36,12 +36,11 @@ namespace MPICoursework
                     if (comm.Rank == 0)
                     {
                         Console.Write("Введите команду \nsave - сохранить базу данных;" +
-                                                      "\nsoff - установить статус offline;" + 
-                                                      "\nage - увеличить возраст пользователей на 1;" +
-                                                      "\nonl - посчитать количество пользователей online;" +
+                                                      "\nsoff - установить статус В ожидании;" + 
+                                                      "\nonl - посчитать количество ожидающих пользователей;" +
                                                       "\nmax - найти максимальный возраст менеджеров;" +
                                                       "\nmin - найти минимальный возраст менеджеров;" +
-                                                      "\nsum - посчитать количество заявок пользователей;" +
+                                                      "\nsum - посчитать количество заказов пользователей;" +
                                                       "\ncreate - генерация базы данных: ");
                         command = Console.ReadLine();
                     }
@@ -82,36 +81,14 @@ namespace MPICoursework
                                 int count = comm.Reduce(Commands.SetOffline(localDataBase), Operation<int>.Add, 0);
                                 // Если число успешных выполнений совпало с числом процессов
                                 if (count == comm.Size)
-                                    Console.WriteLine("Все пользователи переведены в статус offline");
+                                    Console.WriteLine("Все пользователи переведены в статус Доставлено");
                                 else
-                                    Console.WriteLine("Пользователи не были переведены в offline");
+                                    Console.WriteLine("Пользователи не были переведены в Доставлено");
                             }
                             else
                             {
                                 // Сборка всех данных в 0 процессе с суммированием
                                 comm.Reduce(Commands.SetOffline(localDataBase), Operation<int>.Add, 0);
-                            }
-                            stopWatch.Stop();
-                            break;
-                        case "age":
-                            // Запуск замера времени
-                            stopWatch.Restart();
-                            stopWatch.Start();
-                            if (comm.Rank == 0)
-                            {
-                                Console.WriteLine("Увеличиваем возраст пользователей на 1 год");
-                                // Сборка всех данных в 0 процессе с суммированием
-                                int count = comm.Reduce(Commands.AddAge(localDataBase), Operation<int>.Add, 0);
-                                // Если число успешных выполнений совпало с числом процессов
-                                if (count == comm.Size)
-                                    Console.WriteLine("Возраст успешно увеличен на 1 год");
-                                else
-                                    Console.WriteLine("Возраст не был увеличен");
-                            }
-                            else
-                            {
-                                // Сборка всех данных в 0 процессе с суммированием
-                                comm.Reduce(Commands.AddAge(localDataBase), Operation<int>.Add, 0);
                             }
                             stopWatch.Stop();
                             break;
@@ -121,10 +98,10 @@ namespace MPICoursework
                             stopWatch.Start();
                             if (comm.Rank == 0)
                             {
-                                Console.WriteLine("Выбираем пользователей онлайн");
+                                Console.WriteLine("Выбираем пользователей в ожидании");
                                 // Сборка всех данных в 0 процессе с суммированием
                                 int count = comm.Reduce(Commands.CountUsersOnline(localDataBase), Operation<int>.Add, 0);
-                                Console.WriteLine($"Онлайн: {count}");
+                                Console.WriteLine($"Ожидающих: {count}");
                             }
                             else
                             {
@@ -139,17 +116,17 @@ namespace MPICoursework
                             stopWatch.Start();
                             if (comm.Rank == 0)
                             {
-                                Console.WriteLine("Считаем число заявок");
+                                Console.WriteLine("Считаем число заказов");
                                 // Сборка результата выполнения в 0 процессе
-                                string[] serializedResultsGath = comm.Gather(JsonSerializer.Serialize(Commands.SumApps(localDataBase)), 0);
+                                string[] serializedResultsGath = comm.Gather(JsonSerializer.Serialize(Commands.SumOrders(localDataBase)), 0);
                                 // Список для хранения десериализованного результата
-                                List<AppsCount> sumUsers = new List<AppsCount> { };
+                                List<OrderCount> sumUsers = new List<OrderCount> { };
                                 if (serializedResultsGath.Any())
                                     sumUsers = serializedResultsGath
-                                    .Select(x => JsonSerializer.Deserialize<List<AppsCount>>(x)!)
+                                    .Select(x => JsonSerializer.Deserialize<List<OrderCount>>(x)!)
                                     .Where(p => p != null)
                                     .Aggregate((a, b) => a.Concat(b).ToList()); // {{1,2,3,4}, {5,6,7,8}, {9, 10}} -> {1,2,3,4,5,6,7,8,9,10}
-                                
+
                                 if (!sumUsers.Any() || sumUsers.Count < 1)
                                 {
                                     Console.WriteLine("Список пуст");
@@ -157,15 +134,15 @@ namespace MPICoursework
                                     break;
                                 }
                                 // Вывод на экран первых 100 пользователей и количества их заявок
-                                foreach (var user in sumUsers.OrderBy(p => p.AppsCountId).Take(100))
+                                foreach (var user in sumUsers.OrderBy(p => p.CustomerId).Take(100))
                                 {
-                                    Console.WriteLine($"{user.AppsCountId} | {user.Name} {user.Surname} | {user.Count}");
+                                    Console.WriteLine($"{user.CustomerId} | {user.CustomerFirstName} {user.CustomerLastName} | {user.OrderCountValue}");
                                 }
                             }
                             else
                             {
                                 // Все !0 процессы выполняют сериализацию и отправляют данные в 0 процесс
-                                comm.Gather(JsonSerializer.Serialize(Commands.SumApps(localDataBase)), 0);
+                                comm.Gather(JsonSerializer.Serialize(Commands.SumOrders(localDataBase)), 0);
                             }
                             stopWatch.Stop();
                             break;
@@ -175,7 +152,7 @@ namespace MPICoursework
                             stopWatch.Start();
                             if (comm.Rank == 0)
                             {
-                                Console.WriteLine("Высчитываем максимальный возраст");
+                                Console.WriteLine("Высчитываем максимальный возраст менеджера");
                                 // Собираем все данные, определяем максимальное значение и передаем 0 процессу
                                 int maxAges = comm.Reduce(Commands.MaxAge(localDataBase), Operation<int>.Max, 0);
                                 Console.WriteLine($"Максимальный возраст: {maxAges}");
@@ -193,7 +170,7 @@ namespace MPICoursework
                             stopWatch.Start();
                             if (comm.Rank == 0)
                             {
-                                Console.WriteLine("Высчитываем минимальный возраст");
+                                Console.WriteLine("Высчитываем минимальный возраст менеджера");
                                 // Собираем все данные, определяем минимальное значение и передаем 0 процессу
                                 int maxAges = comm.Reduce(Commands.MinAge(localDataBase), Operation<int>.Min, 0);
                                 Console.WriteLine($"Минимальный возраст: {maxAges}");

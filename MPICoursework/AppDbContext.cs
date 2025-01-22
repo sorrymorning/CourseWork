@@ -6,13 +6,13 @@ namespace MPICoursework
     class AppDbContext : DbContext
     {
         // Таблица заявок
-        public DbSet<Application> Applications { get; set; }
+        public DbSet<Customer> Customers { get; set; }
         // Таблица менеджеров
         public DbSet<Manager> Managers { get; set; }
         // Таблица статусов
         public DbSet<Status> Statuses { get; set; }
         // Таблица пользователей
-        public DbSet<User> Users { get; set; }
+        public DbSet<Order> Orders { get; set; }
 
         public AppDbContext()
         {
@@ -28,7 +28,7 @@ namespace MPICoursework
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             // Строка подключения к базе данных
-            optionsBuilder.UseSqlServer("Server=(localdb)\\localDB;Database=AmirKrutoi;Trusted_Connection=True;");
+            optionsBuilder.UseSqlServer("Server=(localdb)\\localDB;Database=AmirSuperKrutoi;Trusted_Connection=True;");
         } 
     }
 }
