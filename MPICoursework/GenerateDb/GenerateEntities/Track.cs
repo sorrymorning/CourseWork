@@ -14,8 +14,13 @@
         public DateTime ReleaseDate { get; set; }
         // FK на альбом
         public int AlbumId { get; set; }
+        //public int ArtistId { get; set; }
         // Навигационное свойство для альбома
         public Album? Album { get; set; }
-    }
 
+
+
+
+
+    }
 }

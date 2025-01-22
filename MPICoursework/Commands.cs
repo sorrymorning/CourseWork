@@ -151,7 +151,7 @@ namespace MPICoursework
                     PlaylistList = db.Playlists
                         .Include(p => p.Tracks)
                             //.ThenInclude(pt => pt.Track)
-                        .Skip(offsetPlaylists)
+                        .Skip(offsetPlaylists) 
                         .Take(partPlaylists)
                         .OrderBy(p => p.PlaylistId)
                         .ToList()
@@ -216,7 +216,8 @@ namespace MPICoursework
                             Duration = TimeSpan.FromSeconds(rand.Next(120, 420)),
                             Plays = rand.Next(52, 1000000),
                             ReleaseDate = album.ReleaseDate.AddDays(rand.Next(1, 365)),
-                            AlbumId = album.AlbumId
+                            AlbumId = album.AlbumId,
+                         
                         };
                         tracks.Add(track);
                         db.Tracks.Add(track);
