@@ -34,7 +34,7 @@ namespace MPICoursework
             // Поиск записи с полем Country, равным "Greece"
             List<Artist> artists = localDb.ArtistList.Where(p => p.Country == "Greece").ToList();
             //Console.WriteLine($"Found {greeceArtists.Count} artists from Greece.");
-           
+
             if (!artists.Any())
                 return 0;
 
@@ -150,8 +150,8 @@ namespace MPICoursework
                     // Заполнение списка плейлистов из базы данных
                     PlaylistList = db.Playlists
                         .Include(p => p.Tracks)
-                            //.ThenInclude(pt => pt.Track)
-                        .Skip(offsetPlaylists) 
+                        //.ThenInclude(pt => pt.Track)
+                        .Skip(offsetPlaylists)
                         .Take(partPlaylists)
                         .OrderBy(p => p.PlaylistId)
                         .ToList()
@@ -188,7 +188,7 @@ namespace MPICoursework
                 var albums = new List<Album>();
                 foreach (var artist in artists)
                 {
-                    for (int i = 0; i < rand.Next(1, 5); i++)
+                    for (int i = 0; i < 3; i++)
                     {
                         var album = new Album
                         {
@@ -208,7 +208,7 @@ namespace MPICoursework
                 var tracks = new List<Track>();
                 foreach (var album in albums)
                 {
-                    for (int i = 0; i < rand.Next(5, 15); i++)
+                    for (int i = 0; i < 3; i++)
                     {
                         var track = new Track
                         {
@@ -217,7 +217,7 @@ namespace MPICoursework
                             Plays = rand.Next(52, 1000000),
                             ReleaseDate = album.ReleaseDate.AddDays(rand.Next(1, 365)),
                             AlbumId = album.AlbumId,
-                         
+
                         };
                         tracks.Add(track);
                         db.Tracks.Add(track);
@@ -241,6 +241,20 @@ namespace MPICoursework
 
                 // Сохранение изменений в базе данных
                 db.SaveChanges();
+            }
+        }
+
+        public static void Count()
+        {
+            using (var db = new AppDbContext())
+            {
+                // Количество строк в каждой таблице
+                int countTracks = db.Tracks.Count();
+                int countArtists = db.Artists.Count();
+                int countAlbums = db.Albums.Count();
+                int countPlaylists = db.Playlists.Count();
+
+                Console.WriteLine(countTracks + countArtists + countAlbums + countPlaylists);
             }
         }
     }

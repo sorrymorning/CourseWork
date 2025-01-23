@@ -230,6 +230,9 @@ namespace MPICoursework
                             localDataBase = Commands.PreLoading(comm.Rank, comm.Size);
                             stopWatch.Stop();
                             break;
+                        case "counting":
+                            Commands.Count();
+                            break;
                         default:
                             if (comm.Rank == 0 && command != "quit")
                                 Console.WriteLine("Неизвестная команда");

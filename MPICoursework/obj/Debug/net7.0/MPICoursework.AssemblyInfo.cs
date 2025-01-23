@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MPICoursework")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+acc75566687fcd7a351d32dde32f187b721e2b04")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b0d2a63760034e9fdd2190b2b83a43418c3c1363")]
 [assembly: System.Reflection.AssemblyProductAttribute("MPICoursework")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MPICoursework")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
