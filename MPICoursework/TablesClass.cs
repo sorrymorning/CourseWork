@@ -6,12 +6,14 @@ namespace MPICoursework
     public class TablesClass
     {
         // Список заявок
-        public List<Application> ApplicationList { get; set; }
+        public List<Movie> MovieList { get; set; }
         // Список менеджеров
-        public List<Manager> ManagerList { get; set; }
+        public List<Director> DirectorList { get; set; }
         // Список пользователей
-        public List<User> UserList { get; set; }
+        public List<Genre> GenreList { get; set; }
         // Список статусов
-        public List<Status> StatusList { get; set; }
+        public List<Actor> ActorList { get; set; }
+
+        public List<MovieActor> MovieActorList { get; set; }
     }
 }

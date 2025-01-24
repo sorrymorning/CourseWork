@@ -36,12 +36,12 @@ namespace MPICoursework
                     if (comm.Rank == 0)
                     {
                         Console.Write("Введите команду \nsave - сохранить базу данных;" +
-                                                      "\nsoff - установить статус offline;" + 
-                                                      "\nage - увеличить возраст пользователей на 1;" +
-                                                      "\nonl - посчитать количество пользователей online;" +
-                                                      "\nmax - найти максимальный возраст менеджеров;" +
-                                                      "\nmin - найти минимальный возраст менеджеров;" +
-                                                      "\nsum - посчитать количество заявок пользователей;" +
+                                                      "\nsoff - установить стандарное день рождение;" + 
+                                                      "\nage - увеличить возраст актеров и директоров на 1;" +
+                                                      "\nonl - Подсчет количества актеров, участвующих в фильмах (старше 17 лет);" +
+                                                      "\nmax - найти максимальный возраст актеров;" +
+                                                      "\nmin - найти минимальный возраст актеров;" +
+                                                      "\nsum - Подсчет количества фильмов для каждого режиссера;" +
                                                       "\ncreate - генерация базы данных: ");
                         command = Console.ReadLine();
                     }
@@ -79,17 +79,17 @@ namespace MPICoursework
                             if (comm.Rank == 0)
                             {
                                 // Сборка всех данных в 0 процессе с суммированием
-                                int count = comm.Reduce(Commands.SetOffline(localDataBase), Operation<int>.Add, 0);
+                                int count = comm.Reduce(Commands.SetDefaultBirthYear(localDataBase), Operation<int>.Add, 0);
                                 // Если число успешных выполнений совпало с числом процессов
                                 if (count == comm.Size)
-                                    Console.WriteLine("Все пользователи переведены в статус offline");
+                                    Console.WriteLine("Все круто");
                                 else
-                                    Console.WriteLine("Пользователи не были переведены в offline");
+                                    Console.WriteLine("Не все круто");
                             }
                             else
                             {
                                 // Сборка всех данных в 0 процессе с суммированием
-                                comm.Reduce(Commands.SetOffline(localDataBase), Operation<int>.Add, 0);
+                                comm.Reduce(Commands.SetDefaultBirthYear(localDataBase), Operation<int>.Add, 0);
                             }
                             stopWatch.Stop();
                             break;
@@ -99,7 +99,7 @@ namespace MPICoursework
                             stopWatch.Start();
                             if (comm.Rank == 0)
                             {
-                                Console.WriteLine("Увеличиваем возраст пользователей на 1 год");
+                                Console.WriteLine("Увеличиваем возраст на 1 год");
                                 // Сборка всех данных в 0 процессе с суммированием
                                 int count = comm.Reduce(Commands.AddAge(localDataBase), Operation<int>.Add, 0);
                                 // Если число успешных выполнений совпало с числом процессов
@@ -121,15 +121,15 @@ namespace MPICoursework
                             stopWatch.Start();
                             if (comm.Rank == 0)
                             {
-                                Console.WriteLine("Выбираем пользователей онлайн");
+                                Console.WriteLine("Вычисляем");
                                 // Сборка всех данных в 0 процессе с суммированием
-                                int count = comm.Reduce(Commands.CountUsersOnline(localDataBase), Operation<int>.Add, 0);
-                                Console.WriteLine($"Онлайн: {count}");
+                                int count = comm.Reduce(Commands.CountActorsInMovies(localDataBase), Operation<int>.Add, 0);
+                                Console.WriteLine($"Ответ: {count}");
                             }
                             else
                             {
                                 // Сборка всех данных в 0 процессе с суммированием
-                                comm.Reduce(Commands.CountUsersOnline(localDataBase), Operation<int>.Add, 0);
+                                comm.Reduce(Commands.CountActorsInMovies(localDataBase), Operation<int>.Add, 0);
                             }
                             stopWatch.Stop();
                             break;
@@ -139,14 +139,14 @@ namespace MPICoursework
                             stopWatch.Start();
                             if (comm.Rank == 0)
                             {
-                                Console.WriteLine("Считаем число заявок");
+                                Console.WriteLine("Считаю");
                                 // Сборка результата выполнения в 0 процессе
-                                string[] serializedResultsGath = comm.Gather(JsonSerializer.Serialize(Commands.SumApps(localDataBase)), 0);
+                                string[] serializedResultsGath = comm.Gather(JsonSerializer.Serialize(Commands.SumMovies(localDataBase)), 0);
                                 // Список для хранения десериализованного результата
-                                List<AppsCount> sumUsers = new List<AppsCount> { };
+                                List<MoviesCount> sumUsers = new List<MoviesCount> { };
                                 if (serializedResultsGath.Any())
                                     sumUsers = serializedResultsGath
-                                    .Select(x => JsonSerializer.Deserialize<List<AppsCount>>(x)!)
+                                    .Select(x => JsonSerializer.Deserialize<List<MoviesCount>>(x)!)
                                     .Where(p => p != null)
                                     .Aggregate((a, b) => a.Concat(b).ToList()); // {{1,2,3,4}, {5,6,7,8}, {9, 10}} -> {1,2,3,4,5,6,7,8,9,10}
                                 
@@ -157,15 +157,15 @@ namespace MPICoursework
                                     break;
                                 }
                                 // Вывод на экран первых 100 пользователей и количества их заявок
-                                foreach (var user in sumUsers.OrderBy(p => p.AppsCountId).Take(100))
+                                foreach (var user in sumUsers.OrderBy(p => p.DirectorId).Take(100))
                                 {
-                                    Console.WriteLine($"{user.AppsCountId} | {user.Name} {user.Surname} | {user.Count}");
+                                    Console.WriteLine($"{user.DirectorId} | {user.Name} {user.Surname} | {user.Count}");
                                 }
                             }
                             else
                             {
                                 // Все !0 процессы выполняют сериализацию и отправляют данные в 0 процесс
-                                comm.Gather(JsonSerializer.Serialize(Commands.SumApps(localDataBase)), 0);
+                                comm.Gather(JsonSerializer.Serialize(Commands.SumMovies(localDataBase)), 0);
                             }
                             stopWatch.Stop();
                             break;
